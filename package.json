@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/ctodmia/tweetwatch/issues"
   },
-  "homepage": "https://github.com/ctodmia/tweetwatch#readme"
+  "homepage": "https://github.com/ctodmia/tweetwatch#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "twitter": "^1.2.5"
+  }
 }
