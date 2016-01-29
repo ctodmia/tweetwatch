@@ -1,0 +1,28 @@
+{
+  "name": "tweetwatch",
+  "version": "1.0.0",
+  "description": "A twitter feed monitor to help you keep track of your favorite profiles",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctodmia/tweetwatch.git"
+  },
+  "keywords": [
+    "Twitter",
+    "API",
+    "Nodejs",
+    "Backbonejs",
+    "reactjs",
+    "html5",
+    "css3"
+  ],
+  "author": "Carine Todmia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctodmia/tweetwatch/issues"
+  },
+  "homepage": "https://github.com/ctodmia/tweetwatch#readme"
+}
