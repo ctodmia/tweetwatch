@@ -29,10 +29,18 @@ var client = new Twitter({
   // }
 });
 
+
 var params = {screen_name: 'AppDirect'};
 
-app.get('/tweets', function(req, res){
+app.param('name', function(req, res, next, name){
+  console.log('this is name', name)
+  var screen_name = name;
+  req.name = screen_name
+  next();
+})
+app.get('/tweets/:name', function(req, res){
   
+  console.log('this is req.name inside the tweets', req.name);
 
   client.get('statuses/user_timeline', params, function(error, tweets, response){
     if(error) {return error};
