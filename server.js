@@ -29,15 +29,26 @@ var client = new Twitter({
   // }
 });
 
-var params = {screen_name: 'AppDirect'};
 
-app.get('/tweets', function(req, res){
+var params = {screen_name: 'ctodmia'};
+
+app.param('name', function(req, res, next, name){
+  console.log('this is name', name)
+  var screen_name = name;
+  req.name = screen_name
+  next();
+})
+app.get('/tweets/:name', function(req, res){
   
-
-  client.get('statuses/user_timeline', params, function(error, tweets, response){
-    if(error) {return error};
-   res.json(tweets); 
-  });
+  if(req.name){
+    params = {screen_name: req.name};
+    client.get('statuses/user_timeline', params, function(error, tweets, response){
+      if(error) {return error};
+     res.json(tweets); 
+    });
+  } else {
+    res.send('no user found');
+  }
 
 })
 

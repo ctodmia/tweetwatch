@@ -1,6 +1,9 @@
 var TweetCollection = Backbone.Collection.extend({
 	model: Tweet,
-	url: '/tweets',
+	url: function(name) {
+		console.log('this the name you entered', name);
+		return '/tweets/'+name;
+	},
 	parse: function(data) {
 		return data;
 	}
