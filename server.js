@@ -30,7 +30,7 @@ var client = new Twitter({
 });
 
 
-var params = {screen_name: 'chiamakao'};
+var params = {screen_name: 'ctodmia'};
 
 app.param('name', function(req, res, next, name){
   console.log('this is name', name)
@@ -40,12 +40,15 @@ app.param('name', function(req, res, next, name){
 })
 app.get('/tweets/:name', function(req, res){
   
-  console.log('this is req.name inside the tweets', req.name);
-
-  client.get('statuses/user_timeline', params, function(error, tweets, response){
-    if(error) {return error};
-   res.json(tweets); 
-  });
+  if(req.name){
+    params = {screen_name: req.name};
+    client.get('statuses/user_timeline', params, function(error, tweets, response){
+      if(error) {return error};
+     res.json(tweets); 
+    });
+  } else {
+    res.send('no user found');
+  }
 
 })
 
