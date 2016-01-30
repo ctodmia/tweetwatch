@@ -30,7 +30,7 @@ var client = new Twitter({
 });
 
 
-var params = {screen_name: 'AppDirect'};
+var params = {screen_name: 'chiamakao'};
 
 app.param('name', function(req, res, next, name){
   console.log('this is name', name)
