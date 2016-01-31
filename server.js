@@ -33,7 +33,6 @@ var client = new Twitter({
 var params = {screen_name: 'ctodmia'};
 
 app.param('name', function(req, res, next, name){
-  console.log('this is name', name)
   var screen_name = name;
   req.name = screen_name
   next();
