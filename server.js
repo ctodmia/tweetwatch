@@ -34,14 +34,26 @@ var params = {screen_name: 'ctodmia'};
 
 app.param('name', function(req, res, next, name){
   var screen_name = name;
-  req.name = screen_name
+  req.name = screen_name;
   next();
 })
+
+app.get('/users/:name', function(req, res) {
+
+  params = {screen_name: req.name};
+  client.get('users/show', params, function(error, founduser, response) {
+    if(error) {
+      return error
+    }
+    res.json(founduser);
+  });
+});
+
 app.get('/tweets/:name', function(req, res){
   
   if(req.name){
     params = {screen_name: req.name};
-    client.get('statuses/user_timeline', params, function(error, tweets, response){
+    client.get('statuses/user_timeline', params, function(error, tweets, response) {
       if(error) {return error};
      res.json(tweets); 
     });

@@ -47,16 +47,31 @@
    
 
     <script type="text/jsx">
-    
+        // var user1 = new Backbone.Model({name: 'carine'});
+        var user = new UserModel('AppDirect')
         var BuckysComponent = React.createClass({
+          componentWillMount : function() {
+             user.on("change", (function() {
+               this.forceUpdate();
+             }.bind(this)));
+           },
+           componentWillUnmount : function() {
+             user.off("change");
+           },
             render: function() {
                 return (
-                        <h2>My name is Bucky</h2>
+                  <div>
+                        <h2>{this.props.user.get("name")}</h2>
+                        <p>{this.props.user.get("description")}</p>
+                      </div>
                 );
             }
         });
 
-        React.render(<BuckysComponent />, document.getElementById('content'));
+        ReactDOM.render(
+          <div>
+            <BuckysComponent user={user} /> 
+          </div>, document.getElementById('content'));
 
     </script>
 
@@ -71,6 +86,7 @@
 
      
      <script type="text/javascript" src="js/backbone.js"></script>
+     <script type="text/javascript" src="Models/UserModel.js"></script>
      <script type="text/javascript" src="Models/TweetModel.js"></script>
      <script type="text/javascript" src="Collections/TweetCollection.js"></script>
    </body>
