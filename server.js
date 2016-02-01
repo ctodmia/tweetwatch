@@ -37,17 +37,22 @@ app.param('name', function(req, res, next, name){
   req.name = screen_name
   next();
 })
+
 app.get('/tweets/:name', function(req, res){
   
   if(req.name){
     params = {screen_name: req.name};
     client.get('statuses/user_timeline', params, function(error, tweets, response){
       if(error) {return error};
+
+      console.log('tweets', tweets)
+
      res.json(tweets); 
     });
   } else {
     res.send('no user found');
   }
+
 
 })
 

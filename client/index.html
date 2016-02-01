@@ -34,6 +34,13 @@
    			
    		<div class="row">
    		  <div class="col s12 m6 l3"><p>My Profile Info</p>
+   		  <div id="userprofile">
+   		  	<img src="" width="100px" height="100px">
+   		  	<h5>User Name</h5>
+   		  	<p>@screen_name</p>
+   		  	<p>this is the paragraph</p>
+   		  </div>
+
    		  	 <div id="content"></div>
    		  </div>
    		  <div class="col s12 m6 l3"><p>@AppDirect</p></div>
@@ -50,13 +57,14 @@
     
         var BuckysComponent = React.createClass({
             render: function() {
+
                 return (
                         <h2>My name is Bucky</h2>
                 );
             }
         });
 
-        React.render(<BuckysComponent />, document.getElementById('content'));
+        ReactDOM.render(<BuckysComponent />, document.getElementById('content'));
 
     </script>
 
@@ -64,10 +72,19 @@
      <!--Import jQuery before materialize.js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
      <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+     <script type="text/javascript" src="app.js"></script>
      <script src="js/init.js"></script>
      <script src="js/reactjs/build/react.js"></script>
      <script src="js/reactjs/build/react-dom.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+
+     <!--shims for ES compatibility-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.2/es5-shim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.2/es5-sham.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-sham.min.js"></script>
+     <script src="https://wzrd.in/standalone/es7-shim@latest"></script>
 
      
      <script type="text/javascript" src="js/backbone.js"></script>
