@@ -1,0 +1,18 @@
+header, main, footer {
+  padding-left: 240px;
+}
+
+#slide-out{
+	margin-top: 64px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}

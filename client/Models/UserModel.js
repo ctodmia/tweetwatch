@@ -15,6 +15,7 @@ var UserModel = Backbone.Model.extend({
 			name: data.name, 
 			screenname: data.screen_name,
 			description: data.description,
+			image: data.profile_image_url_https
 
 		})
 
