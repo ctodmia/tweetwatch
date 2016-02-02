@@ -16,3 +16,14 @@ img {
 	width: 100px;
 	height: 100px;
 }
+
+.container{
+	margin-left: 30px;
+	width: auto;
+}
+
+#tweetview {
+	height: 350px;
+	overflow: hidden;
+	overflow: auto;
+}

@@ -1,5 +1,5 @@
 var TweetCollection = Backbone.Collection.extend({
-	// model: Tweet,
+	model: Tweet,
 	initialize: function(name){
 		var url = this.url(name);
 		this.fetch({url:url})
@@ -10,16 +10,17 @@ var TweetCollection = Backbone.Collection.extend({
 	parse: function(data) {
 		var tweets = this.toJSON();
 		_.each(data, function(tweet){
-			this.model = new Tweet();
-			this.model.set({
-				id: data.id,
+			this.models = new Tweet();
+			this.models.set({
+				id: tweet.id,
 				name: tweet.user.name,
 				screenname: tweet.user.screen_name,
 				date: tweet.created_at,
 				text: tweet.text,
-				image: tweet.user.profile_image_url_https
+				image: tweet.user.profile_image_url_https,
+				link: 'https://twitter.com/'+tweet.user.screen_name+'/statuses/'+tweet.id_str
 			})
-			tweets.push(this.model)
+			tweets.push(this.models);
 		})
 
 		return tweets

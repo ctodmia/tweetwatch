@@ -9,16 +9,13 @@ var UserModel = Backbone.Model.extend({
 	},
 
 	parse: function(data) {
-		console.log('this is data', data);
 		this.set({
 			id: data.id,
 			name: data.name, 
 			screenname: data.screen_name,
 			description: data.description,
-			image: data.profile_image_url_https
-
+			image: data.profile_image_url_https,
 		})
-
 		return this.toJSON();
 	}
 });

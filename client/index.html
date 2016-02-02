@@ -47,7 +47,10 @@
    	<section>
    			
    		<div class="row">
-   		  <div class="col s12 m4"><p>@AppDirect</p></div>
+   		  <div class="col s12 m4"><p>@AppDirect</p>
+          <div id="tweetview">
+          </div>
+        </div>
    		  <div class="col s12 m4"><p>@laughingsquid</p></div>
    		  <div class="col s12 m4"><p>@techcrunch</p></div>
    		</div>
@@ -57,11 +60,7 @@
 </main>
    
 
-    <script type="text/jsx" src="Views/UserView.jsx">
-        // var user1 = new Backbone.Model({name: 'carine'});
-     
-
-    </script>
+    
 
     <script type="text/javascript" src="js/underscore.js"></script>
      <!--Import jQuery before materialize.js-->
@@ -77,6 +76,9 @@
      <script type="text/javascript" src="Models/UserModel.js"></script>
      <script type="text/javascript" src="Models/TweetModel.js"></script>
      <script type="text/javascript" src="Collections/TweetCollection.js"></script>
+     <script type="text/jsx" src="Views/UserView.jsx"></script>
+     <script type="text/jsx" src="Views/TweetView.jsx"></script>
+     <script type="text/javascript" src="bower_components/react.backbone/react.backbone.js"></script>
    </body>
  </html>
        
