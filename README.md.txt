@@ -32,24 +32,32 @@ Live Demo Coming soon: [Live Demo](https://tweetwatcher.herokuapp.com/)
 
 ### Technology Stack
 
-<img src="http://i.imgur.com/dktBkgD.png"> |  <img src="http://i.imgur.com/P5hKmWx.png">|<img src="http://i.imgur.com/hi6gCzf.png">|<img src="http://i.imgur.com/jK9PTgu.png">
+<img src="client/img/react.png"> |  <img src="client/img/backbone.png">|<img src="http://i.imgur.com/hi6gCzf.png">|<img src="http://i.imgur.com/jK9PTgu.png">
 --- | --- | --- | --- |
-Angular.js | MongoDB| Node.js|Express.js
+React.js | Backbonejs| Node.js|Express.js
 
 Other:
 
-Angular Material Design
+Twitter API
+
+###React Views
+
+React was used to render the views on the frontend of the application. 
+
+###Backbonejs Models and Collections
+
+Backbone was use to for generating models and collections.
+
+###Node/Express
+
+Used as a backend server to create restful api.  
 
 <br>
 ### Application Overview
 
 Feature showcase: 
 
-The sellview of the application allows sellers to create inventory cards that are later displayed to the entire marketplace
-<a href="https://africaexpress.herokuapp.com/#/sell" target="_blank"><img src="client/img/sellview.jpg"></a>
-
-The shopview is modern display of all the available inventory in the application. 
-<a href="https://africaexpress.herokuapp.com/#/shop" target="_blank"><img src="client/img/shopview.jpg"></a>
+The application features a three column view of the lastest tweets as set by the user. 
 
 
 <br>

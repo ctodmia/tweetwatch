@@ -35,6 +35,13 @@ img {
 	float: left;
 
 }
+.col.s12.m4 {
+	cursor: move;
+}
+
+.col.s12.m4.over {
+	border: 2px dashed #000;
+}
 
 .container{
 	/*margin-left: 30px;*/
