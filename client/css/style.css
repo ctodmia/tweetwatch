@@ -4,26 +4,67 @@ header, main, footer {
 
 #slide-out{
 	margin-top: 64px;
+	text-align: center;
+}
+
+nav .nav-wrapper: {
+	margin: 0px 20px;
 }
 
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
   }
+  .col.s2 img{
+  	display: none;
+  }
 }
 
 img {
 	width: 100px;
 	height: 100px;
+	border-radius: 100%;
+}
+.col.s2 img{
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+}
+.col.s10.m9 li {
+	list-style: none;
+	float: left;
+
 }
 
 .container{
-	margin-left: 30px;
+	/*margin-left: 30px;*/
+	margin: 20px;
 	width: auto;
 }
 
-#tweetview {
+.tweetview {
 	height: 350px;
 	overflow: hidden;
 	overflow: auto;
+}
+div#content {
+	position: relative;	
+	top: 50px;
+	margin: 5px;
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 5px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.1);
 }

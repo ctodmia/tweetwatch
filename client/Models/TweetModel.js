@@ -1,3 +1,3 @@
 var Tweet = Backbone.Model.extend({
-	screenName: "screen_name"
+	// screenName: "screen_name"
 });
