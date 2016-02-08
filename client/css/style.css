@@ -2,7 +2,7 @@ header, main, footer {
   padding-left: 240px;
 }
 
-#slide-out{
+#slide-out {
 	margin-top: 64px;
 	text-align: center;
 }
@@ -25,25 +25,28 @@ img {
 	height: 100px;
 	border-radius: 100%;
 }
-.col.s1 img{
+
+.col.s1 img {
 	width: 25px;
 	height: 25px;
 	border-radius: 100%;
 }
+
 .col.s10.m10 li {
 	list-style: none;
 	float: left;
 	margin-right: 20px;
 	color: #000;
-
 }
 
 .collection a.collection-item {
 	color: #000;
 }
+
 .collection a.collection-item:not(.active):hover {
 	background-color: #ECF4FB;
 }
+
 .col.s10.m10 li.sub {
 	font-size: 12px;
 	color: #BBBCBF
@@ -55,12 +58,13 @@ img {
 .col.s12.m4.over {
 	border: 2px dashed #000;
 }
-div.col.s2{
+
+div.col.s2 {
 	background-color: red;
 	width: 2px
 }
-.container{
-	/*margin-left: 30px;*/
+
+.container {
 	margin: 20px;
 	width: auto;
 }
@@ -78,18 +82,15 @@ div#content {
 	margin: 5px;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   width: 12px;  /* for vertical scrollbars */
   height: 5px; /* for horizontal scrollbars */
 }
 
-::-webkit-scrollbar-track
-{
+::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.1);
 }

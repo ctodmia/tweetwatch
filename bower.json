@@ -1,9 +1,10 @@
 {
-  "name": "app-name",
+  "name": "TweetWatch",
   "version": "0.0.1",
   "dependencies": {
     "jquery": "^2.2.0",
-    "Materialize": "materialize#^0.97.5"
+    "Materialize": "materialize#^0.97.5",
+    "react.backbone": "^0.6.0"
   },
   "private": true
 }

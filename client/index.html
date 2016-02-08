@@ -1,102 +1,77 @@
 <!DOCTYPE html>
- <html>
-   <head>
-     <!--Import Google Icon Font-->
-     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   </head>
-
-   <body>
-  
-   
-   <nav>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav>
      <div class="nav-wrapper">
        <a href="#!" class="brand-logo">TweetWatch</a>
        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
        <ul class="right hide-on-med-and-down">
-         <li><a href="https://github.com/ctodmia/tweetwatch">About</a></li>
+         <li><a href="https://github.com/ctodmia/tweetwatch" target="_blank">About</a></li>
        </ul>
        <ul class="side-nav" id="mobile-demo">
          <li><a href="https://github.com/ctodmia/tweetwatch" target="_blank">About</a></li>
        </ul>
      </div>
-   </nav>
-
-<div> 
-  <ul id="slide-out" class="side-nav fixed">
-       <div id="content"></div>  
-  </ul>
-</div>
-
-<main>
-   <div class="container">
-   	<h3>DashBoard</h3>
-
-   	<div class="divider"></div>
-   	<section>
-   			
-   		<div class="row">
-   		  <div class="col s12 m4" draggable="true">
-        <div class="profileview1">
-          <h5>App Direct</h5>
-        </div>
-          <div id="tweetview1" class="tweetview">
-
-          </div>
-        </div>
-   		  <div class="col s12 m4" draggable="true">
-          <div class="profileview2">
-            <h5>Tech Crunch</h5> 
-          </div>
-          <div id="tweetview2" class="tweetview">
-
-          </div>
-        </div>
-          
-   		  <div class="col s12 m4" draggable="true"> 
-        <div class="profileview3">
-          <h5>Laughing Squid</h5>
-        </div>
-
-          <div id="tweetview3" class="tweetview">
-
-          </div>
-        </div>
-          
-   		</div>
-
-   	</section>
+    </nav>
+    <div> 
+      <ul id="slide-out" class="side-nav fixed">
+        <div id="content"></div>  
+      </ul>
     </div>
-</main>
-   
-
-    
-
-    <script type="text/javascript" src="js/underscore.js"></script>
-     <!--Import jQuery before materialize.js-->
-     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-     <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
-     <script src="js/init.js"></script>
-     <script src="js/reactjs/build/react.js"></script>
-     <script src="js/reactjs/build/react-dom.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
-
+    <main>
+      <div class="container">
+        <h3>DashBoard</h3>
+        <div class="divider"></div>
+        <section>
+          <div class="row">
+            <div class="col s12 m4" draggable="true">
+              <div class="profileview1">
+                <h5>App Direct</h5>
+              </div>
+              <div id="tweetview1" class="tweetview"></div>
+            </div>
+            <div class="col s12 m4" draggable="true">
+              <div class="profileview2">
+                <h5>Tech Crunch</h5> 
+              </div>
+              <div id="tweetview2" class="tweetview"></div>
+            </div> 
+       		  <div class="col s12 m4" draggable="true"> 
+              <div class="profileview3">
+                <h5>Laughing Squid</h5>
+              </div>
+              <div id="tweetview3" class="tweetview"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  <script type="text/javascript" src="js/underscore.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+  <script type="text/javascript"src="js/init.js"></script>
+  <script type="text/javascript"src="js/reactjs/build/react.js"></script>
+  <script type="text/javascript"src="js/reactjs/build/react-dom.js"></script>
+  <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+  <script type="text/javascript" src="js/backbone.js"></script>
+  <script type="text/javascript" src="Models/UserModel.js"></script>
+  <script type="text/javascript" src="Models/TweetModel.js"></script>
+  <script type="text/javascript" src="Collections/TweetCollection.js"></script>
+  <script type="text/jsx" src="Views/UserView.jsx"></script>
+  <script type="text/jsx" src="Views/TweetView.jsx"></script>
+  <script type="text/javascript" src="bower_components/react.backbone/react.backbone.js"></script>
+  <script type="text/javascript" src="drag.js"></script>
+ </body>
+</html>
      
-     <script type="text/javascript" src="js/backbone.js"></script>
-     <script type="text/javascript" src="Models/UserModel.js"></script>
-     <script type="text/javascript" src="Models/TweetModel.js"></script>
-     <script type="text/javascript" src="Collections/TweetCollection.js"></script>
-     <script type="text/jsx" src="Views/UserView.jsx"></script>
-     <script type="text/jsx" src="Views/TweetView.jsx"></script>
-     <script type="text/javascript" src="bower_components/react.backbone/react.backbone.js"></script>
-     <script type="text/javascript" src="app.js"></script>
-     <script type="text/javascript" src="drag.js"></script>
-   </body>
- </html>
-       
 
