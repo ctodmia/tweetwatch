@@ -6,21 +6,6 @@ Live Demo Coming soon: [Live Demo](https://tweetwatcher.herokuapp.com/)
 
 <img src="client/img/homeview.png">
 
-
-
-## Table of Contents
-
-1. [Owner](#owner)
-1. [Technology Stack](#technology-stack)
-1. [Application Overview](#application-overview)
-1. [Project Roadmap](#project-roadmap)
-1. [Usage](#usage)
-    1. [Requirements](#requirements)
-    1. [Installing Dependencies](#installing-dependencies)
-1. [Contributing](#contributing)
-
-<br>
-
 ### Owner
 
 [![Carine Todmia](https://avatars0.githubusercontent.com/u/9440923?v=3&s=70)](https://github.com/ctodmia) <br>Carine Todmia
@@ -44,27 +29,14 @@ Other:
 
 Feature showcase: 
 
-The application features a three column view of the lastest tweets as set by the user. 
+The application features a three column view of the lastest tweets. Users are redirected to the original tweet when clicked on. Users also have the option of switching the order of the columns by dragging and dropping the column to the target position. 
+
 Drag and Drop
 <img src="client/img/dragshot.png">
 
-Compatible
+Mobile Compatible
 
-<img src="client/img/mobile/view.png">
-
-Twitter API
-
-###React Views
-
-React was used to render the views on the frontend of the application. 
-
-###Backbonejs Models and Collections
-
-Backbone was use to for generating models and collections.
-
-###Node/Express
-
-Used as a backend server to create restful api.  
+<img src="client/img/mobileview.png">
 
 <br>
 ### Requirements
@@ -82,3 +54,11 @@ sudo npm install -g bower
 npm install
 bower install
 ```
+Connecting to twitter API
+
+1. Use the following link to obtain a consumerKey, consumerSecret, accessToken, accessTokenSecret from twitter.com
+https://apps.twitter.com/
+
+2. Creat a config.js file in the root project folder.
+
+3. Copy and paste the format from config_template.js to config.js and fill out the empty keys with information aquired from twitter. 
