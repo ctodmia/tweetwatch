@@ -8,7 +8,7 @@ var TweetViewComponent = React.createBackboneClass({
     		</div>
 	    	<div className="col s10 m9">
 	    			<ul><li>{get.get('name')}</li> 
-	    			<li>@{get.get('screenname')  }</li>
+	    			<li>@{get.get('screenname')}</li>
 	    			<li>{get.get('date')}</li></ul>
 	    			{ get.get('text') }
 	    		
