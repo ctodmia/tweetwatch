@@ -3,18 +3,18 @@ var TweetViewComponent = React.createBackboneClass({
   	var get = this.getModel();		
     return <li><a className="collection-item" target="_blank" href={ get.get('link') }>
     	<div className="row">
-    		<div className="col s2">
+    		<div className="col s1">
     			<img src={get.get('image')} />
     		</div>
-	    	<div className="col s10 m9">
-	    			<ul><li>{get.get('name')}</li> 
-	    			<li>@{get.get('screenname')}</li>
-	    			<li>{get.get('date')}</li></ul>
-	    			{ get.get('text') }
-	    		
-	    	</div>
-    	</div>
-    	</a></li>;
+	    	<div className="col s10 m10">
+	    			<ul><li>{get.get('name')} </li> 
+	    			<li className="sub">@{get.get('screenname')} </li>
+            <li className="sub">{get.get('date') }</li><li></li></ul>
+	    			
+        </div>
+      </div>
+        { get.get('text') }    
+      </a></li>;
   }
 });
 
