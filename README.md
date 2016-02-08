@@ -2,8 +2,6 @@
 
 > A Twitter feed monitor to help you keep track of your favorite profiles
 
-Live Demo Coming soon: [Live Demo](https://tweetwatcher.herokuapp.com/)
-
 <img src="client/img/homeview.png">
 
 ### Owner
