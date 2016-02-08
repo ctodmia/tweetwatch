@@ -62,4 +62,4 @@ https://apps.twitter.com/
 
 2. Creat a config.js file in the root project folder.
 
-3. Copy and paste the format from config_template.js to config.js and fill out the empty keys with information aquired from twitter. 
+3. Copy and paste the format from config_template.js to config.js and fill out the empty keys with information acquired from twitter. 
