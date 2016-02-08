@@ -1,13 +1,7 @@
 # TweetWatch
-
 > A Twitter feed monitor to help you keep track of your favorite profiles
-
 Live Demo Coming soon: [Live Demo](https://tweetwatcher.herokuapp.com/)
-
 <img src="client/img/homeview.png">
-
-
-
 ## Table of Contents
 
 1. [Owner](#owner)
@@ -32,7 +26,7 @@ Live Demo Coming soon: [Live Demo](https://tweetwatcher.herokuapp.com/)
 
 ### Technology Stack
 
-<img src="client/img/react.png"> |  <img src="client/img/backbone.png">|<img src="http://i.imgur.com/hi6gCzf.png">|<img src="http://i.imgur.com/jK9PTgu.png">
+<img height="100px" width="100px" src="client/img/react.png"> |  <img height="100px" width="100px" src="client/img/backbone.png">|<img src="http://i.imgur.com/hi6gCzf.png">|<img src="http://i.imgur.com/jK9PTgu.png">
 --- | --- | --- | --- |
 React.js | Backbonejs| Node.js|Express.js
 
@@ -50,7 +44,7 @@ Drag and Drop
 
 Compatible
 
-<img src="client/img/mobile/view.png">
+<img src="client/img/mobileview.png">
 
 Twitter API
 
@@ -82,3 +76,5 @@ sudo npm install -g bower
 npm install
 bower install
 ```
+
+NOTE**********ensure bower components folder is located within client folder. 
