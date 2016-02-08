@@ -17,7 +17,7 @@ Live Demo Coming soon: [Live Demo](https://tweetwatcher.herokuapp.com/)
 
 ### Technology Stack
 
-<img src="client/img/react.png"> |  <img src="client/img/backbone.png">|<img src="http://i.imgur.com/hi6gCzf.png">|<img src="http://i.imgur.com/jK9PTgu.png">
+<img width="100px" height="100px" src="client/img/react.png"> |  <img width="100px" height="100px" src="client/img/backbone.png">|<img src="http://i.imgur.com/hi6gCzf.png">|<img src="http://i.imgur.com/jK9PTgu.png">
 --- | --- | --- | --- |
 React.js | Backbonejs| Node.js|Express.js
 
@@ -44,6 +44,7 @@ Mobile Compatible
 - Node    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;version 3.0+
 - Bower   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;version 1.4+
 
+NOTE **************** ensure the bower_components folder is installed in client folder.
 
 ### Installing Dependencies
 
